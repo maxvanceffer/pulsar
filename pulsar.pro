@@ -9,9 +9,14 @@ QT        += core gui network script xml dbus
 TARGET    = pulsar
 TEMPLATE  = app
 
-CONFIG    += link_pkgconfig qxt
-PKGCONFIG += QtGStreamer-0.10 QtGStreamerUi-0.10
-QXT       += core gui
+CONFIG      += link_pkgconfig qxt
+PKGCONFIG   += QtGStreamer-0.10 QtGStreamerUi-0.10
+QXT         += core gui
+DESTDIR     += bin
+OBJECTS_DIR += obj
+MOC_DIR     += moc
+RCC_DIR     += rcc
+UI_DIR      += obj_ui
 
 include(translations/translations.pri)
 

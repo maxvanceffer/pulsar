@@ -2,7 +2,7 @@
 #define SHORTCUTSMANAGER_H
 
 #include <QObject>
-#include <QxtGlobalShortcut>
+#include </usr/include/qxt/QxtGui/QxtGlobalShortcut>
 #include <QShortcut>
 
 class ShortcutsManager : public QObject
