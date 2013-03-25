@@ -59,6 +59,11 @@ void VkActions::addToLibrary(Track *track)
     m_nManager->get(request);
 }
 
+void VkActions::postToWall(Track *track, const QString &vk_friend)
+{
+
+}
+
 void VkActions::removeFromLibrary(Track *track)
 {
     m_lastTrack = track;

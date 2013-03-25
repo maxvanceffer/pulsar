@@ -763,5 +763,8 @@ void Playlist::onExit()
 
 void Playlist::postOnWall()
 {
-
+    if( m_LastTrack )
+    {
+        m_LastTrack->
+    }
 }

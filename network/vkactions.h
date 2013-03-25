@@ -32,6 +32,14 @@ public:
     static VkActions *instance();
 
     void addToLibrary(Track *track);
+
+    /*!
+     * \brief postToWall post given track on the wall in vk
+     * \param track to post
+     * \param vk_friend friend on which wall to post, if friend nick is empty then track will be posted on logged in user wall
+     */
+    void postToWall(Track *track, const QString& vk_friend = QString());
+
     void removeFromLibrary(Track *track);
     void setStatus(Track *track);
 
