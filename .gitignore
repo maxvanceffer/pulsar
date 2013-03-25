@@ -1,2 +1,8 @@
 .directory
 pulsar.pro.user
+Makefile
+.*.o
+/bin
+/obj
+/moc
+/rcc
