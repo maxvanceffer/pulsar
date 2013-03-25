@@ -271,7 +271,12 @@ void Playlist::createMenus()
     removeA->setShortcut(QKeySequence::Delete);
     m_listMenu->addAction(removeA);
     connect(removeA, SIGNAL(triggered()), this, SLOT(removeTrack()));
-
+    
+    // Post on the wall 
+    QAction *postA  = new QAction(tr("Post on the wall"),this);
+    //postA->setShortcut();
+    m_listMenu->addAction(postA);
+    connect(postA,SIGNAL(triggered()), this, SLOT(postOnWall()));
 
     // Set 'add to local list' menu for all lists except local list
     if(m_listType != PlaylistWidget::LocalList)
@@ -754,4 +759,9 @@ void Playlist::setMetaTagsChanged(bool load, bool use)
 void Playlist::onExit()
 {
     save();
+}
+
+void Playlist::postOnWall()
+{
+
 }

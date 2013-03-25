@@ -195,6 +195,7 @@ private Q_SLOTS:
     void addToLibrary();
     void addToQueue();
     void downloadTrack();
+    void postOnWall();
 
     // Activate track, from playlist widget
     void trackActivate(Track *);
@@ -227,7 +228,6 @@ public Q_SLOTS:
     void playLast();
 
     void onExit();
-
 };
 
 #endif // PLAYLIST_H
